@@ -84,4 +84,4 @@ Per segnalazioni di bug o richieste di miglioramenti, apri un'**issue** su GitHu
 [Hanami Software](https://github.com/HanamiSoftware) - Creato con ❤️ da Hanami Software. 
 
 If you Liked It!!
-<a href="https://www.buymeacoffee.com/hanamisoftware" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+<br/> <a href="https://www.buymeacoffee.com/hanamisoftware" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
