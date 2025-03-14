@@ -6,7 +6,7 @@ Ninja Readmore è un plugin jQuery leggero e flessibile che consente di limitare
 - Imposta un'altezza massima per il testo e aggiunge un link per espandere/contrarre il contenuto.
 - Compatibile con Bootstrap e il suo sistema di griglie.
 - Supporto per i modali di Bootstrap con un'opzione dedicata.
-- Evento personalizzato `hanamiReadmore:init` per estendere le funzionalità.
+- Evento personalizzato `ninjaReadmore:init` per estendere le funzionalità.
 - Facile da integrare con configurazioni personalizzabili.
 
 ## 📦 Installazione
