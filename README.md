@@ -13,10 +13,10 @@ Ninja Readmore è un plugin jQuery leggero e flessibile che consente di limitare
 
 Aggiungi il plugin al tuo progetto includendo i seguenti file:
 
-/* ### 1. Inclusione da CDN (prossima versione)
+### 1. Inclusione da CDN (prossima versione)
 ```html
-<script src="https://cdn.jsdelivr.net/npm/hanami-readmore/hanamiReadmore.min.js"></script>
-```*/
+<script src="https://cdn.jsdelivr.net/npm/hanami-software/ninjaReadmore.min.js"></script>
+```
 
 ### 2. Inclusione Manuale
 Scarica il file `ninjaReadmore.js` e includilo nel tuo progetto:
