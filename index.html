@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NinjaReadmore con Bootstrap Modal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/ninjaReadmore.js"></script>
+    <style>
+        .read-more {
+            margin-bottom: 20px;
+        }
+        .read-more-link {
+            color: #007bff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
 
+<div class="container mt-5">
+    <!-- Bottone per aprire il modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Apri il Modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">HanamiReadmore nel Modal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="read-more">
+                        Questo è un testo molto lungo che verrà tagliato a una certa altezza. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Chiudi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        // Inizializza il plugin anche all'interno del modal
+        $('.read-more').ninjaReadmore({
+            height: 100,         // Altezza massima personalizzata
+            moreText: 'Leggi di più',
+            lessText: 'Leggi meno',
+            insideModal: true    // Attiva il supporto per i modali Bootstrap
+        });
+
+        // Aggiungi un listener per l'evento personalizzato
+        $('.read-more').on('ninjaReadmore:init', function() {
+            console.log('Plugin NinjaReadmore inizializzato');
+        });
+    });
+</script>
+
+</body>
+</html>
