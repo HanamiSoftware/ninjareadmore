@@ -67,7 +67,7 @@ Assicurati di includere jQuery prima del plugin:
 | `insideModal` | `bool` | `false` | Abilita il supporto per i modali Bootstrap. |
 
 ## 🔄 Evento Personalizzato
-L'evento `hanamiReadmore:init` viene attivato dopo l'inizializzazione del plugin. Può essere usato per azioni personalizzate.
+L'evento `ninjaReadmore:init` viene attivato dopo l'inizializzazione del plugin. Può essere usato per azioni ed eventi personalizzati.
 
 ```javascript
 $('.read-more').on('ninjaReadmore:init', function() {
